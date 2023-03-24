@@ -1,0 +1,7 @@
+.circle{
+    width: 160px;
+    height: 160px;
+    border: 40px solid rgb(110, 148, 253);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(110, 148, 253), inset 0 0 15px rgb(110, 148, 253);
+}
