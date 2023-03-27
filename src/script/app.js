@@ -45,8 +45,6 @@ function selectItem(index){
             document.getElementById('gamepool').style.pointerEvents="none";
             return
           }
-          console.log("Arrplayer=  "+arrPlayer);
-          console.log("Arrbot=  "+arrBot);
           return
        }
        
