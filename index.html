@@ -5,40 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./src/script/app.js"></script>
     <link rel="stylesheet" href="./src/styles/cross.css">
     <link rel="stylesheet" href="./src/styles/circle.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div class="container mx-auto flex items-center justify-center h-screen flex-col">
+    <div class="container mx-auto flex items-center justify-center h-screen flex-col" id="gamepool">
         <h1 class="text-5xl mb-6 font-bold">Tic Tac Toe</h1>
         <div class="bg-gray-100 w-[648px] h-[648px] flex flex-wrap p-6 rounded-[28px]">
-            <div class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-r-4 border-black transition cursor-pointer rounded-tl-[28px] flex items-center justify-center">
-                <div id="item0" class="cross"></div>
+            <div onclick="selectItem(0)"  class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-r-4 border-black transition cursor-pointer rounded-tl-[28px] flex items-center justify-center">
+                <div id="item0" class=""></div>
             </div>
-            <div class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-r-4 border-l-4 border-black transition cursor-pointer flex items-center justify-center">
-                <div id="item1" class="circle"></div>
+            <div onclick="selectItem(1)" class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-r-4 border-l-4 border-black transition cursor-pointer flex items-center justify-center">
+                <div id="item1" class=""></div>
             </div>
-            <div class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-l-4  border-black transition cursor-pointer rounded-tr-[28px] flex items-center justify-center">
-                <div id="item2" class="cross"></div>
+            <div onclick="selectItem(2)" class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-l-4  border-black transition cursor-pointer rounded-tr-[28px] flex items-center justify-center">
+                <div id="item2" class=""></div>
             </div>
-            <div class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-t-4 border-r-4 border-black transition cursor-pointer flex items-center justify-center">
+            <div onclick="selectItem(3)" class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-t-4 border-r-4 border-black transition cursor-pointer flex items-center justify-center">
                 <div id="item3"></div>
             </div>
-            <div class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-t-4 border-r-4 border-l-4 border-black transition cursor-pointer flex items-center justify-center">
-                <div id="item4" class="cross"></div>
+            <div onclick="selectItem(4)" class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-t-4 border-r-4 border-l-4 border-black transition cursor-pointer flex items-center justify-center">
+                <div id="item4" class=""></div>
             </div>
-            <div class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-t-4 border-l-4 border-black transition cursor-pointer flex items-center justify-center">
-                <div id="item5" class="circle"></div>
+            <div onclick="selectItem(5)" class="hover:bg-gray-300 w-[200px] h-[200px] border-b-4 border-t-4 border-l-4 border-black transition cursor-pointer flex items-center justify-center">
+                <div id="item5" class=""></div>
             </div>
-            <div class="hover:bg-gray-300 w-[200px] h-[200px] border-t-4 border-r-4 border-black transition cursor-pointer rounded-bl-[28px] flex items-center justify-center">
-                <div id="item6" class="circle"></div>
+            <div onclick="selectItem(6)" class="hover:bg-gray-300 w-[200px] h-[200px] border-t-4 border-r-4 border-black transition cursor-pointer rounded-bl-[28px] flex items-center justify-center">
+                <div id="item6" class=""></div>
             </div>
-            <div class="hover:bg-gray-300 w-[200px] h-[200px] border-t-4 border-r-4 border-l-4 border-black transition cursor-pointer flex items-center justify-center">
+            <div onclick="selectItem(7)" class="hover:bg-gray-300 w-[200px] h-[200px] border-t-4 border-r-4 border-l-4 border-black transition cursor-pointer flex items-center justify-center">
                 <div id="item7"></div>
             </div>
-            <div class="hover:bg-gray-300 w-[200px] h-[200px] border-t-4 border-l-4 border-black transition cursor-pointer rounded-br-[28px] flex items-center justify-center">
-                <div id="item8" class="cross"></div>
+            <div onclick="selectItem(8)" class="hover:bg-gray-300 w-[200px] h-[200px] border-t-4 border-l-4 border-black transition cursor-pointer rounded-br-[28px] flex items-center justify-center">
+                <div id="item8" class=""></div>
             </div>
         </div>
     </div>  
